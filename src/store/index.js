@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
 Vue.use(Vuex)
+
+import starships from './starships'
+import people from './people'
+import films from './films'
 
 export default new Vuex.Store({
   state: {
@@ -11,5 +14,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
+    starships, people, films
   }
 })
